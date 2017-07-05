@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<!--    Copyright 2014 gokoururi
+        This work is free. You can redistribute it and/or modify it under the
+        terms of the Do What The Fuck You Want To Public License, Version 2,
+        as published by Sam Hocevar. See the COPYING file for more details. -->
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <title>Welcome, Master ♥</title>
+        <link rel="icon" href="themes/favicon.ico" sizes="16x16 32x32 48x48 64x64" type="image/vnd.microsoft.icon" />
+        <link rel="stylesheet" style="text/css" href="themes/colors-dark.css" title="ruri-dark" />
+		<link rel="alternate stylesheet" style="text/css" href="themes/colors-light.css" title="ruri-light" />
+        <script type="text/javascript">var mascotPath = "themes/images/mascots/";</script>
+        <script type="text/javascript" src="themes/mascots.js"></script>
+        <script type="text/javascript" src="js/jquery-2.1.1.min.js"></script>
+        <script type="text/javascript" src="js/mascots-control.js"></script>
+		<script type="text/javascript" src="js/text-control--en.js"></script>
+		<script type="text/javascript" src="js/style-switcher.js"></script>
+    </head>
+    <body>
+        <main>
+            <header>
+                <h1 style="cursor: default;">Welcome, <span class="name-highlight">Master~ ♥</span></h1>
+                <p id="r_text" class="subtitle" style="cursor: default;"></p>
+            </header>
+            <section class="searchContainer">
+                <form class="searchForm" method="get" action="https://google.com/search" target="_blank">
+                    <input class="searchBar search_google" type="text" name="q" placeholder="Google" autofocus="autofocus" search_/>
+                </form>
+                <form class="searchForm" method="get" action="https://youtube.com/results">
+                    <input class="searchBar search_youtube" type="text" name="search_query" placeholder="YouTube" search_/>
+                </form>
+                <form class="searchForm" method="get" action="https://myanimelist.net/search/all?q=">
+                    <input class="searchBar search_myanimelist" type="text" name="q" placeholder="MyAnimeList" search_/>
+                </form>
+                <form class="searchForm" method="get" action="https://nyaa.si/?q=">
+                    <input class="searchBar search_nyaa" type="text" name="q" placeholder="Nyaa" search_/>
+                </form>
+                <form class="searchForm" method="get" action="https://nyaa.pantsu.cat/search?q=">
+                    <input class="searchBar search_nyaa-pantsu" type="text" name="q" placeholder="Nyaa Pantsu" search_/>
+                </form>
+            </section>
+            <nav>
+                <ul class="buttonList">
+					<li class="button button_grey buttonArrow"><a style="cursor: pointer;">Social Network</a>
+                        <ul>
+							<li><a href="http://www.facebook.com" target="_blank">Facebook</a></li>
+                            <li><a href="https://twitter.com" target="_blank">Twitter</a></li>
+                            <li><a href="https://plus.google.com" target="_blank">Google+</a></li>
+                        </ul>
+                    </li>
+					<li class="button button_grey buttonArrow"><a style="cursor: pointer;">Watch Anime</a>
+                        <ul>
+							<li><a href="http://www.crunchyroll.com target="_blank"">Crunchyroll</a></li>
+                            <li><a href="https://9anime.to" target="_blank">9Anime</a></li>
+                            <li><a href="https://ww1.gogoanime.io" target="_blank">Gogoanime</a></li>
+                            <li><a href="http://kissanime.ru" target="_blank">KissAnime</a></li>
+                        </ul>
+                    </li>
+                    <li class="button button_grey buttonArrow"><a style="cursor: pointer;">Reverse Image Search</a>
+                        <ul>
+                            <li><a href="https://iqdb.org" target="_blank">iqdb</a></li>
+                            <li><a href="https://saucenao.com" target="_blank">SauceNAO</a></li>
+							<li><a href="https://whatanime.ga" target="_blank">WAIT</a></li>
+                            <li><a href="https://images.google.com" target="_blank">Google</a></li>
+                            <li><a href="https://tineye.com" target="_blank">TinEye</a></li>
+                        </ul>
+                    </li>
+                </ul>
+				<ul class="columnList">
+					<li class="column column_pink">
+						<a style="cursor: default;">Resources</a>
+						<ul>
+							<li><a href="https://chan.sankakucomplex.com" target="_blank">Sankaku Complex</a></li>
+							<li><a href="https://yande.re" target="_blank">yande.re</a></li>
+							<li><a href="https://danbooru.donmai.us" target="_blank">Danbooru</a></li>
+							<li><a href="http://konachan.com" target="_blank">konachan</a></li>
+							<li><a href="http://www.zerochan.net" target="_blank">zerochan</a></li>
+							<li><a href="https://www.pixiv.net" target="_blank">pixiv</a></li>
+						</ul>
+					</li>
+					<li class="column column_pink">
+						<a style="cursor: default;">4chan</a>
+						<ul>
+							<li><a href="https://boards.4chan.org/a/catalog" target="_blank">Anime & Manga</a></li>
+							<li><a href="https://boards.4chan.org/c/catalog" target="_blank">Anime / Cute</a></li>
+							<li><a href="https://boards.4chan.org/w/catalog" target="_blank">Anime Wallpaper</a></li>
+							<li><a href="https://boards.4chan.org/jp/catalog" target="_blank">Otaku Culture</a></li>
+						</ul>
+					</li>
+					<li class="column column_pink">
+						<a style="cursor: default;">reddit</a>
+						<ul>
+							<li><a href="https://www.reddit.com/r/anime" target="_blank">Anime</a></li>
+							<li><a href="https://www.reddit.com/r/animenews" target="_blank">Anime News</a></li>
+							<li><a href="https://www.reddit.com/r/Animewallpaper" target="_blank">Anime Wallpaper</a></li>
+						</ul>
+					</li>
+					<li class="column column_pink">
+						<a style="cursor: default;">Anime Torrents</a>
+						<ul>
+							<li><a href="https://animebytes.tv" target="_blank">AnimeBytes</a></li>
+							<li><a href="https://www.bakabt.me" target="_blank"">BakaBT</a></li>
+							<li><a href="https://nyaa.si" target="_blank">Nyaa</a></li>
+							<li><a href="https://nyaa.pantsu.cat" target="_blank">Nyaa Pantsu</a></li>
+							<li><a href="http://horriblesubs.info" target="_blank">HorribleSubs</a></li>
+						</ul>
+					</li>
+				</ul>
+            </nav>
+			<div align="right">
+				<li class="column column_pink" style="cursor: pointer;"><a style="font-size: 15px;" onclick="setActiveStyleSheet('ruri-dark'); return false;">Dark</a></li>
+				<li class="column column_pink" style="cursor: pointer;"><a style="font-size: 15px;" onclick="setActiveStyleSheet('ruri-light'); return false;">Light</a></li>
+			</div>
+        </main>
+    </body>
+</html>
