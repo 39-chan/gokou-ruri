@@ -14,10 +14,52 @@
         <script type="text/javascript" src="themes/mascots.js"></script>
         <script type="text/javascript" src="js/jquery-2.1.1.min.js"></script>
         <script type="text/javascript" src="js/mascots-control.js"></script>
+		<script type="text/javascript" src="js/modal-control.js"></script>
 		<script type="text/javascript" src="js/text-control--en.js"></script>
 		<script type="text/javascript" src="js/style-switcher.js"></script>
+		<!--<script type="text/javascript" src="js/snowstorm.js"></script>-->
+		<style>
+			/* The Modal (background) */
+			.modal
+			{
+				display: none; /* Hidden by default */
+				position: fixed; /* Stay in place */
+				z-index: 1; /* Sit on top */
+				left: 0;
+				top: 0;
+				width: 100%; /* Full width */
+				height: 100%; /* Full height */
+				overflow: none; /* Set to auto to enable scroll if needed */
+				background-color: rgb(0,0,0); /* Fallback color */
+				background-color: rgba(0,0,0,0.7); /* Black w/ opacity */
+			}
+			/* Modal Content/Box */
+			.modal-content
+			{
+				background-color: #fefefe;
+				margin: 5% auto; /* 15% from the top and centered */
+				padding: 20px;
+				border: 1px solid #888;
+				width: 50%; /* Could be more or less, depending on screen size */
+			}
+			/* The Close Button */
+			.close
+			{
+				color: #aaa;
+				float: right;
+				font-size: 28px;
+				font-weight: bold;
+				transition: all 200ms
+			}
+			.close:hover, .close:focus
+			{
+				color: black;
+				text-decoration: none;
+				cursor: pointer;
+			}		
+		</style>
 	</head>
-    <body>
+    <body onkeydown="modalSettings()">
         <main>
             <header>
                 <h1 style="cursor: default;">Welcome, <span class="name-highlight">Master~ ♥</span></h1>
@@ -51,7 +93,7 @@
                     </li>
 					<li class="button button_grey buttonArrow"><a style="cursor: pointer;">Watch Anime</a>
                         <ul>
-							<li><a href="http://www.crunchyroll.com target="_blank"">Crunchyroll</a></li>
+							<li><a href="http://www.crunchyroll.com target="_blank">Crunchyroll</a></li>
                             <li><a href="https://9anime.to" target="_blank">9Anime</a></li>
                             <li><a href="https://ww1.gogoanime.io" target="_blank">Gogoanime</a></li>
                             <li><a href="http://kissanime.ru" target="_blank">KissAnime</a></li>
@@ -111,6 +153,21 @@
 			<div align="right">
 				<li class="column column_pink" style="cursor: pointer;"><a style="font-size: 15px;" onclick="setActiveStyleSheet('ruri-dark'); return false;">Dark</a></li>
 				<li class="column column_pink" style="cursor: pointer;"><a style="font-size: 15px;" onclick="setActiveStyleSheet('ruri-light'); return false;">Light</a></li>
+			</div>
+			<div id="myModal" class="modal">
+				<div class="modal-content">
+					<span class="close">&times;</span>
+					<p style="font-size: 16px; font-weight: bold;">Settings</p>
+					<hr>
+					<div align="left">
+						<form action="">
+							<input type="checkbox" name="" value="">Test 1</input><br>
+							<input type="checkbox" name="" value="">Test 2</input><br>
+							<input type="checkbox" name="" value="">Test 3</input><br><br>
+							<button type="button" disabled>Save</button>
+						</form>
+					</div>
+				</div>
 			</div>
         </main>
     </body>
